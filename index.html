@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Disc Dice</title>
+  <meta name="Disc dice for disc golf.">
+  <meta name="Adrian Andersson">
+</head>
+<body>
+  <div>
+  	<h1 id="disc">Hello</h1>
+  	<h1 id="throw">World!</h1>
+  	<button onclick="roll()">Roll</button>
+  </div>
+  <script>
+  	function roll() {
+  		var discType = [
+  			"overstable",
+  			"stable",
+  			"understable",
+  			"putter",
+  			"mid-range",
+  			"fairway driver",
+  			"distance driver",
+  			"thrower's choice"
+		];
+  		var throwType = [
+  			"hyzer",
+  			"roller",
+  			"anhyzer",
+  			"tomahawk",
+  			"forehand",
+  			"thrower's choice"
+		];
+  		document.getElementById("disc").innerHTML = discType[Math.floor(Math.random() * discType.length)];
+  		document.getElementById("throw").innerHTML = throwType[Math.floor(Math.random() * throwType.length)];
+  	}
+  </script>
+</body>
+</html>
