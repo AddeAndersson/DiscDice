@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-html, body {height: 100%; width: 100%; background-color: rgb(255, 215, 105);}
+html, body {height: 100%; width: 100%; background-color: rgb(255, 215, 105); margin: 0px;}
 #outerContainer {
   height: 100%;
   padding: 0;
