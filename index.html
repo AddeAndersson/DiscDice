@@ -5,12 +5,17 @@
   <title>Disc Dice</title>
   <meta name="Disc dice for disc golf.">
   <meta name="Adrian Andersson">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <div>
-  	<h1 id="disc">Hello</h1>
-  	<h1 id="throw">World!</h1>
-  	<button onclick="roll()">Roll</button>
+  <div id="outerContainer">
+    <div id="innerContainer">
+    	<h1 class="item" id="disc">Throw</h1>
+    	<h1 class="item" id="throw">Dice</h1>
+    	<div class="item" onclick="roll()">
+        <img width="200px" src="images/dice.png" alt="dice"> 
+      </div>
+    </div>
   </div>
   <script>
   	function roll() {
@@ -32,8 +37,8 @@
   			"forehand",
   			"thrower's choice"
 		];
-  		document.getElementById("disc").innerHTML = discType[Math.floor(Math.random() * discType.length)];
-  		document.getElementById("throw").innerHTML = throwType[Math.floor(Math.random() * throwType.length)];
+  		document.getElementById("disc").innerHTML = "Disc: " + discType[Math.floor(Math.random() * discType.length)];
+  		document.getElementById("throw").innerHTML = "Throw: " + throwType[Math.floor(Math.random() * throwType.length)];
   	}
   </script>
 </body>
