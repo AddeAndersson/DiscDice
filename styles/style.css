@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+html, body {height: 100%; width: 100%; background-color: rgb(255, 215, 105);}
+#outerContainer {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#innerContainer {
+  transform: translate(0, 0);
+  width: auto;
+}
+.item {
+  font-family: 'Bangers', cursive;
+  font-size: 3em;
+  color: rgb(96,195,176);
+  text-align: center;
+}
+
+.scale {
+  -webkit-animation: shrink 0.25s linear, grow 0.25s linear 0.25s;
+  -moz-animation: shrink 0.25s linear, grow 0.25s linear 0.25s;
+  animation: shrink 0.25s linear, grow 0.25s linear 0.25s;
+}
+
+.spin {
+  -webkit-animation: spin 0.5s linear;
+  -moz-animation: spin 0.5s linear;
+  animation: spin 0.5s linear;
+}
+
+#scaler {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@-webkit-keyframes grow {
+    from { transform:scale(0.5); }
+    to { transform:scale(1); }
+}
+@-moz-keyframes grow {
+    from { transform:scale(0.5); }
+    to { transform:scale(1); }
+}  }
+}
+@keyframes grow {
+    from { transform:scale(0.5); }
+    to { transform:scale(1); }
+}
+@-webkit-keyframes shrink {
+    from { transform:scale(1); }
+    to { transform:scale(0.5); }
+}
+@-moz-keyframes shrink {
+    from { transform:scale(1); }
+    to { transform:scale(0.5); }
+}
+@keyframes shrink {
+    from { transform:scale(1); }
+    to { transform:scale(0.5); }
+}
