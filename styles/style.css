@@ -13,6 +13,7 @@ html, body {height: 100%; width: 100%; background-color: rgb(255, 215, 105);}
   justify-content: center;
 }
 #innerContainer {
+  flex-direction: column;
   transform: translate(0, 0);
   width: auto;
 }
@@ -38,7 +39,6 @@ html, body {height: 100%; width: 100%; background-color: rgb(255, 215, 105);}
 #scaler {
   display: flex;
   justify-content: center;
-  width: auto;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
