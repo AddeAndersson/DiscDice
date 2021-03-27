@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-html, body {height: 100%; width: 100%; background-color: rgb(255, 215, 105); margin: 0px;}
+html, body { 
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 215, 105);
+  margin: 0px; 
+  font-family: 'Bangers', cursive;
+  color: rgb(96,195,176);
+}
+
 #outerContainer {
   height: 100%;
   padding: 0;
@@ -23,6 +31,10 @@ html, body {height: 100%; width: 100%; background-color: rgb(255, 215, 105); mar
 .item {
   font-size: 2em;
   text-align: center;
+}
+
+#enabledDiscs, #enabledThrows {
+  margin: 0;
 }
 
 /* Custom checkboxes */

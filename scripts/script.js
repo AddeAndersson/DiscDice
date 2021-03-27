@@ -18,10 +18,14 @@ function play() {
 	document.getElementById("discForm").style.display = "none";
 	document.getElementById("dice").style.display = "block";
 
+	document.getElementById("enabledDiscs").innerHTML = "Enabled Discs:";
+	document.getElementById("enabledThrows").innerHTML = "Enabled Throws:";
+
 	var discs = document.getElementsByClassName("disc");
 	for(i = 0; i < discs.length; ++i) {
 		if(discs[i].checked) {
 			enabledDiscs.push(discs[i].value);
+			document.getElementById("enabledDiscs").innerHTML += " " + discs[i].value;
 		}
 	}
 
@@ -29,6 +33,10 @@ function play() {
 	for(i = 0; i < types.length; ++i) {
 		if(types[i].checked) {
 			enabledThrows.push(types[i].value);
+			document.getElementById("enabledThrows").innerHTML += " " + types[i].value;
 		}
 	}
-}
+}	
+
+	
+	
