@@ -15,11 +15,84 @@
 <body>
   <div id="outerContainer">
     <div id="innerContainer">
-    	<h1 class="item" id="disc">Roll</h1>
+    	<!--h1 class="item" id="disc">Roll</h1>
     	<h1 class="item" id="throw">Dice!</h1>
     	<div id="scaler" class="item" onclick="roll()">
         <img id="spinner" width="200px" height="200px" src="images/dice.png" alt="dice">
-      </div>
+      </div-->
+      <form id="discForm" action="" onsubmit="play();return false;">
+        <div>
+          <span style="font-size: 2em">Discs:<br></span>
+          <input type="checkbox" name="overstable" value="Overstable" class="disc check">
+          <label for="overstable">Overstable</label><br>
+          
+          <input type="checkbox" name="stable" value="Stable" class="disc check">
+          <label for="stable">Stable</label><br>
+          
+          <input type="checkbox" name="understable" value="Understable" class="disc check" checked>
+          <label for="understable">Understable</label><br>
+          
+          <input type="checkbox" name="putter" value="Putter" class="disc check">
+          <label for="putter">Putter</label><br>
+          
+          <input type="checkbox" name="midrange" value="Midrange" class="disc check">
+          <label for="stable">Mid-Range</label><br>
+          
+          <input type="checkbox" name="fairwaydriver" value="Fairwaydriver" class="disc check" checked>
+          <label for="fairwaydriver">Fairway Driver</label><br>
+          
+          <input type="checkbox" name="distancedriver" value="Distance Driver" class="disc check" checked>
+          <label for="distancedriver">Distance Driver</label><br>
+          
+          <input type="checkbox" name="throwersdiscchoice" value="Thrower's Choice" class="disc check" checked>
+          <label for="throwersdiscchoice">Thrower's Choice</label><br>
+          
+          <input type="checkbox" name="opponentsdiscchoice" value="Opponent's Choice" class="disc check" checked>
+          <label for="opponentsdiscchoice">Opponent's Choice</label><br>
+          
+          <input type="checkbox" name="mini" value="Mini" class="disc check">
+          <label for="mini">Mini</label><br><br>
+        </div>
+        <div>
+          <span style="font-size: 2em">Throws:<br></span>
+          <input type="checkbox" name="hyzer" value="Hyzer" class="type check" checked>
+          <label for="hyzer">Hyzer</label><br>
+
+          <input type="checkbox" name="anhyzer" value="Anhyzer" class="type check" checked>
+          <label for="anhyzer">Anhyzer</label><br>
+
+          <input type="checkbox" name="backhand" value="Backhand" class="type check" checked>
+          <label for="backhand">Backhand</label><br>
+
+          <input type="checkbox" name="forehand" value="Forehand" class="type check" checked>
+          <label for="forehand">Forehand</label><br>
+
+          <input type="checkbox" name="roller" value="Roller" class="type check" checked>
+          <label for="roller">Roller</label><br>
+
+          <input type="checkbox" name="tomahawk" value="Tomahawk" class="type check" checked>
+          <label for="tomahawk">Tomahawk</label><br>
+
+          <input type="checkbox" name="thumber" value="Thumber" class="type check" checked>
+          <label for="thumber">Thumber</label><br>
+
+          <input type="checkbox" name="throwerstypechoice" value="Thrower's Choice" class="type check" checked>
+          <label for="throwerstypechoice">Thrower's Choice</label><br>
+          
+          <input type="checkbox" name="opponentstypechoice" value="Opponent's Choice" class="type check" checked>
+          <label for="opponentstypechoice">Opponent's Choice</label><br><br>
+        </div>
+        <input type="submit" value="Play!">
+      </form>
+
+      <div id="dice" style="display:none">
+        <h1 class="item" id="disc">Roll</h1>
+        <h1 class="item" id="throw">Dice!</h1>
+        <div id="scaler" class="item" onclick="roll()">
+          <img id="spinner" width="200px" height="200px" src="images/dice.png" alt="dice">
+        </div>
+      <div>
+
     </div>
   </div>
 </body>
