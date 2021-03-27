@@ -29,8 +29,8 @@ html, body {height: 100%; width: 100%; background-color: rgb(255, 215, 105); mar
 .check[type="checkbox"]:before{
     position: relative;
     display: block;
-    width: 11px;
-    height: 11px;
+    width: 14px;
+    height: 14px;
     border: 1px solid white;
     content: "";
     background: white;
@@ -39,9 +39,9 @@ html, body {height: 100%; width: 100%; background-color: rgb(255, 215, 105); mar
     position: relative;
     display: block;
     left: 2px;
-    top: -11px;
-    width: 7px;
-    height: 7px;
+    top: -14px;
+    width: 14px;
+    height: 14px;
     content: "";
     background-repeat: no-repeat;
     background-position:center;
